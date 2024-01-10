@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    display: flex;
+    width: 90vw;
+}
+
+.painel{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    flex: 0.5;
+    position: relative;
+    transition: flex 0.8s ease-in-out;
+}
+
+.painel h3{
+    background-color: rgb(63, 63, 63);
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 18px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.painel.ativo{
+    flex: 4;
+}
+
+.painel.ativo h3{
+    transition: opacity 0.3s ease-in 0.5s;
+    opacity: 1;
+}
+
+.primeiro {
+    background-image: url(img/super-mario-bros-1-remake.jpg);
+}
+.segundo {
+    background-image: url(img/gameplay-footage-screen-shot-2016-09-13-1-53-pm-2.jpg);
+}
+.terceiro {
+    background-image: url(img/i474375.webp);
+}
+.quarto {
+    background-image: url(img/maiorrrr.png);
+}
+
+
+@media(max-width:480px){
+
+    .painel h3{
+        left: 10px;
+    }
+}
